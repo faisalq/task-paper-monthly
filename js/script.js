@@ -181,7 +181,7 @@
     });
     copyButton = $('#copy-button');
     ZeroClipboard.config({
-      moviePath: 'js/vendor/ZeroClipboard.swf'
+      moviePath: 'js/lib/ZeroClipboard.swf'
     });
     client = new ZeroClipboard(copyButton);
     client.on('load', function(client) {
@@ -200,3 +200,5 @@
   });
 
 }).call(this);
+
+//# sourceMappingURL=script.js.map
