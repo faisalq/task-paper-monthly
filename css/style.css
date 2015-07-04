@@ -42,8 +42,6 @@ table {
 
 * {
   position: relative;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 ::-moz-selection {
@@ -56,15 +54,14 @@ table {
 
 html,
 body {
-  color: #333333; }
+  color: #333; }
 
 .dialog {
   background: #ffc0ab;
   border: 1px solid #ff8c7d;
   border-radius: 3px;
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
-  color: #333333;
+  color: #333;
   display: none;
   padding: 0.75em;
   text-align: center;
@@ -79,11 +76,11 @@ body {
     margin-bottom: 0.75em; }
 
 button {
-  background-image: -webkit-linear-gradient(270deg, #fafafa, #eeeeee);
-  background-image: linear-gradient(180deg, #fafafa, #eeeeee);
-  border: 1px solid #cccccc;
+  background-image: -webkit-linear-gradient(270deg, #fafafa, #eee);
+  background-image: linear-gradient(180deg, #fafafa, #eee);
+  border: 1px solid #ccc;
   border-radius: 3px;
-  color: #aaaaaa;
+  color: #aaa;
   cursor: pointer;
   font-family: "Helvetica Neue", sans-serif;
   font-size: 12px;
@@ -97,20 +94,20 @@ button {
     vertical-align: -6px;
     width: 20px; }
   button:hover {
-    background: -webkit-linear-gradient(270deg, #eeeeee, #dddddd);
-    background: linear-gradient(180deg, #eeeeee, #dddddd);
-    border: 1px solid #888888;
-    color: #666666; }
+    background: -webkit-linear-gradient(270deg, #eee, #ddd);
+    background: linear-gradient(180deg, #eee, #ddd);
+    border: 1px solid #888;
+    color: #666; }
   button:active {
-    background: -webkit-linear-gradient(270deg, #dddddd, #eeeeee);
-    background: linear-gradient(180deg, #dddddd, #eeeeee);
-    color: #666666; }
+    background: -webkit-linear-gradient(270deg, #ddd, #eee);
+    background: linear-gradient(180deg, #ddd, #eee);
+    color: #666; }
   button.yes, button.no {
     padding: 6px 8px; }
   button.yes {
     float: right;
-    border-color: #888888;
-    color: #666666;
+    border-color: #888;
+    color: #666;
     font-weight: 600;
     padding-top: 5px; }
   button.no {
@@ -131,8 +128,8 @@ body,
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column; }
+      -ms-flex-direction: column;
+          flex-direction: column; }
   .container .choose-month-and-year {
     display: -webkit-box;
     display: -webkit-flex;
@@ -141,13 +138,13 @@ body,
     .container .choose-month-and-year #months {
       -webkit-box-flex: 1;
       -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-      flex-grow: 1; }
+          -ms-flex-positive: 1;
+              flex-grow: 1; }
     .container .choose-month-and-year #years {
       -webkit-box-flex: 1;
       -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-      flex-grow: 1; }
+          -ms-flex-positive: 1;
+              flex-grow: 1; }
   .container .items-field-and-generated-month {
     display: -webkit-box;
     display: -webkit-flex;
@@ -155,8 +152,8 @@ body,
     display: flex;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1; }
+        -ms-flex: 1;
+            flex: 1; }
     .container .items-field-and-generated-month .input {
       display: -webkit-box;
       display: -webkit-flex;
@@ -164,18 +161,18 @@ body,
       display: flex;
       -webkit-box-flex: 1;
       -webkit-flex: 1;
-      -ms-flex: 1;
-      flex: 1;
+          -ms-flex: 1;
+              flex: 1;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column; }
+          -ms-flex-direction: column;
+              flex-direction: column; }
       .container .items-field-and-generated-month .input textarea {
         -webkit-box-flex: 1;
         -webkit-flex: 1;
-        -ms-flex: 1;
-        flex: 1; }
+            -ms-flex: 1;
+                flex: 1; }
     .container .items-field-and-generated-month .output {
       display: -webkit-box;
       display: -webkit-flex;
@@ -183,18 +180,18 @@ body,
       display: flex;
       -webkit-box-flex: 1;
       -webkit-flex: 1;
-      -ms-flex: 1;
-      flex: 1;
+          -ms-flex: 1;
+              flex: 1;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column; }
+          -ms-flex-direction: column;
+              flex-direction: column; }
       .container .items-field-and-generated-month .output textarea {
         -webkit-box-flex: 1;
         -webkit-flex: 1;
-        -ms-flex: 1;
-        flex: 1; }
+            -ms-flex: 1;
+                flex: 1; }
 
 body,
 input,
@@ -222,15 +219,15 @@ header {
     display: none; }
   .choose-month-and-year label {
     border-radius: 3px;
-    color: #0099ff;
+    color: #0099FF;
     cursor: pointer;
     display: inline-block;
     margin-right: 0;
     padding: 0.2em 0.4em 0.24em; }
     .choose-month-and-year label:hover {
-      background: #eeeeee; }
+      background: #eee; }
   .choose-month-and-year input:checked + label {
-    background: #0099ff;
+    background: #0099FF;
     color: white; }
   .choose-month-and-year input.current-month + label:after,
   .choose-month-and-year input.current-year + label:after {
@@ -241,7 +238,7 @@ header {
     margin-left: -3px;
     border-left: 3px solid transparent;
     border-right: 3px solid transparent;
-    border-bottom: 3px solid #aaaaaa; }
+    border-bottom: 3px solid #aaa; }
   .choose-month-and-year input.current-month:checked + label:after,
   .choose-month-and-year input.current-year:checked + label:after {
     content: "";
@@ -251,17 +248,17 @@ header {
     margin-left: -3px;
     border-left: 3px solid transparent;
     border-right: 3px solid transparent;
-    border-bottom: 3px solid #0099ff; }
+    border-bottom: 3px solid #0099FF; }
 
 .items-field-and-generated-month h2 {
   font-weight: 600; }
 .items-field-and-generated-month p.directions {
-  color: #aaaaaa;
+  color: #aaa;
   font-size: 12px;
   margin: 1em 0; }
   .items-field-and-generated-month p.directions kbd {
     background: #f1f1f1;
-    border: 1px solid #cccccc;
+    border: 1px solid #ccc;
     border-radius: 4px;
     padding: 0.1em 0.4em;
     font-family: Monaco, Courier, monospace;
@@ -271,7 +268,7 @@ header {
   cursor: pointer;
   text-decoration: underline; }
   .items-field-and-generated-month #restore-default-items-button:hover {
-    color: #0099ff; }
+    color: #0099FF; }
 .items-field-and-generated-month #empty-items-button {
   font-size: 12px;
   position: absolute;
@@ -289,12 +286,10 @@ header {
   padding: 1em; }
   .input textarea {
     background: white;
-    border: 1px solid #cccccc;
-    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+    border: 1px solid #ccc;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075); }
     .input textarea:focus {
-      border-color: #0099ff;
-      -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(0, 153, 255, 0.5);
+      border-color: #0099FF;
       box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(0, 153, 255, 0.5); }
 
 .output {
@@ -308,19 +303,19 @@ header {
     right: 28px;
     z-index: 2; }
     .output #copy-button.zeroclipboard-is-hover {
-      background: -webkit-linear-gradient(270deg, #eeeeee, #dddddd);
-      background: linear-gradient(180deg, #eeeeee, #dddddd);
-      border: 1px solid #888888;
-      color: #666666; }
+      background: -webkit-linear-gradient(270deg, #eee, #ddd);
+      background: linear-gradient(180deg, #eee, #ddd);
+      border: 1px solid #888;
+      color: #666; }
       .output #copy-button.zeroclipboard-is-hover img {
         opacity: 1; }
     .output #copy-button.zeroclipboard-is-active {
-      background: -webkit-linear-gradient(270deg, #dddddd, #eeeeee);
-      background: linear-gradient(180deg, #dddddd, #eeeeee);
-      color: #666666; }
+      background: -webkit-linear-gradient(270deg, #ddd, #eee);
+      background: linear-gradient(180deg, #ddd, #eee);
+      color: #666; }
   .output textarea {
     background: #f4f4f4;
-    border: 1px solid #dddddd;
+    border: 1px solid #ddd;
     font-family: Helvetica, sans-serif;
     font-size: 14px;
     line-height: 1.3;
@@ -328,13 +323,13 @@ header {
     resize: none; }
 
 footer {
-  color: #aaaaaa;
+  color: #aaa;
   padding: 0 1em 1em;
   text-align: center; }
   footer p {
     font-size: 13px;
     line-height: 1.8; }
   footer a {
-    color: #999999; }
+    color: #999; }
   footer a:hover {
-    color: #333333; }
+    color: #333; }
